@@ -53,3 +53,6 @@ function checkAnswer(selectedAnswer, correctAnswer) {
         
         timer -= 10;  
     }
+    currentQuestionIndex++;
+    nextQuestion();
+}
