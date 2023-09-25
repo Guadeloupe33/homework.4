@@ -9,3 +9,8 @@ const questions = [
         choices: ["Retrieve an element by its ID", "Create a new element", "Remove an element", "Change the page's title"],
         correctAnswer: "Retrieve an element by its ID"
     },
+];
+
+let currentQuestionIndex = 0;
+let score = 0;
+let timer;
