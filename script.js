@@ -57,7 +57,7 @@ function checkAnswer(selectedAnswer, correctAnswer) {
     nextQuestion();
 }
 function startTimer() {
-    timer = 60; // Set the initial timer value
+    timer = 60; 
     timerContainer.textContent = timer;
 
     const countdown = setInterval(() => {
@@ -74,6 +74,7 @@ function endQuiz() {
     gameOverContainer.style.display = "block";
     finalScoreContainer.textContent = score;
 }
+
 
 saveScoreButton.addEventListener("click", () => {
     const initials = initialsInput.value;
