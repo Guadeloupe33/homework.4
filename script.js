@@ -70,3 +70,14 @@ function startTimer() {
         }
     }, 1000);
 }
+function endQuiz() {
+    gameOverContainer.style.display = "block";
+    finalScoreContainer.textContent = score;
+}
+
+saveScoreButton.addEventListener("click", () => {
+    const initials = initialsInput.value;
+    
+});
+
+startButton.addEventListener("click", startQuiz);
