@@ -23,3 +23,9 @@ const gameOverContainer = document.getElementById("game-over-container");
 const finalScoreContainer = document.getElementById("final-score");
 const initialsInput = document.getElementById("initials");
 const saveScoreButton = document.getElementById("save-score");
+
+function startQuiz() {
+    startButton.style.display = "none";
+    nextQuestion();
+    startTimer();
+}
