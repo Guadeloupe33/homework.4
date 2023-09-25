@@ -14,3 +14,12 @@ const questions = [
 let currentQuestionIndex = 0;
 let score = 0;
 let timer;
+const questionContainer = document.getElementById("question-container");
+const choicesContainer = document.getElementById("choices-container");
+const timerContainer = document.getElementById("timer");
+const scoreContainer = document.getElementById("score");
+const startButton = document.getElementById("start-button");
+const gameOverContainer = document.getElementById("game-over-container");
+const finalScoreContainer = document.getElementById("final-score");
+const initialsInput = document.getElementById("initials");
+const saveScoreButton = document.getElementById("save-score");
