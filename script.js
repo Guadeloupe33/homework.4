@@ -56,3 +56,17 @@ function checkAnswer(selectedAnswer, correctAnswer) {
     currentQuestionIndex++;
     nextQuestion();
 }
+function startTimer() {
+    timer = 60; // Set the initial timer value
+    timerContainer.textContent = timer;
+
+    const countdown = setInterval(() => {
+        timer--;
+        timerContainer.textContent = timer;
+
+        if (timer <= 0) {
+            clearInterval(countdown);
+            endQuiz();
+        }
+    }, 1000);
+}
