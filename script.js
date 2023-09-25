@@ -45,3 +45,11 @@ function nextQuestion() {
         endQuiz();
     }
 }
+function checkAnswer(selectedAnswer, correctAnswer) {
+    if (selectedAnswer === correctAnswer) {
+        score++;
+        scoreContainer.textContent = score;
+    } else {
+        
+        timer -= 10;  
+    }
