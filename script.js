@@ -29,3 +29,19 @@ function startQuiz() {
     nextQuestion();
     startTimer();
 }
+function nextQuestion() {
+    if (currentQuestionIndex < questions.length) {
+        const currentQuestion = questions[currentQuestionIndex];
+        questionContainer.textContent = currentQuestion.question;
+
+        choicesContainer.innerHTML = "";
+        currentQuestion.choices.forEach((choice) => {
+            const choiceButton = document.createElement("button");
+            choiceButton.textContent = choice;
+            choiceButton.addEventListener("click", () => checkAnswer(choice, currentQuestion.correctAnswer));
+            choicesContainer.appendChild(choiceButton);
+        });
+    } else {
+        endQuiz();
+    }
+}
